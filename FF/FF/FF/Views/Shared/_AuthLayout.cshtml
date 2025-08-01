@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ @* Changed language to English and direction to Left-to-Right *@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Saqia</title> @* Changed title to English *@
+
+    <!-- Google Fonts: Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Basic Tailwind configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#2563EB',
+                        'secondary-gray': '#6B7280',
+                        'light-blue-bg': '#EFF6FF',
+                        'dark-blue-text': '#1E3A8A',
+                    }
+                }
+            }
+        }
+    </script>
+    @* Removed all local CSS links to avoid conflicts and 404 errors *@
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    @* <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
+    @* <link rel="stylesheet" href="~/F.styles.css" asp-append-version="true" /> *@
+</head>
+<body class="font-sans antialiased bg-gradient-to-br from-blue-50 to-blue-200 flex items-center justify-center min-h-screen">
+    <div class="container mx-auto">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

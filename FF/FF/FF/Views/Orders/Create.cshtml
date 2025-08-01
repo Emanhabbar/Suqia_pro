@@ -1,0 +1,77 @@
+﻿@model FF.Models.Order
+@using Microsoft.AspNetCore.Identity
+@using FF.Models
+@inject SignInManager<ApplicationUser> SignInManager
+
+@{
+    ViewData["Title"] = "Create New Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Main container for the form -->
+<div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100 max-w-lg mx-auto" dir="ltr">
+    <h4 class="text-2xl font-semibold text-gray-800 mb-6 border-b pb-2 text-left">Order Details</h4>
+
+    <form asp-action="Create" class="space-y-6">
+        <div asp-validation-summary="ModelOnly" class="text-red-600 text-sm mb-4 font-medium" role="alert"></div>
+
+        <!-- CustomerId (Admin only) -->
+        @if (User.IsInRole("Admin"))
+        {
+            <div>
+                <label asp-for="CustomerId" class="block text-sm font-medium text-gray-700 mb-1">Customer</label>
+                <select asp-for="CustomerId" class="appearance-none rounded-lg w-full px-4 py-3 border border-gray-300 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue transition duration-150 ease-in-out" asp-items="ViewBag.CustomerId">
+                    <option value="">-- Select Customer --</option>
+                </select>
+                <span asp-validation-for="CustomerId" class="text-red-600 text-xs mt-1 block"></span>
+            </div>
+        }
+
+        <!-- TankId -->
+        <div>
+            <label asp-for="TankId" class="block text-sm font-medium text-gray-700 mb-1">Tank</label>
+            <select asp-for="TankId" class="appearance-none rounded-lg w-full px-4 py-3 border border-gray-300 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue transition duration-150 ease-in-out" asp-items="ViewBag.TankId">
+                <option value="">-- Select Tank --</option>
+            </select>
+            <span asp-validation-for="TankId" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- QuantityInBarrels -->
+        <div>
+            <label asp-for="QuantityInBarrels" class="block text-sm font-medium text-gray-700 mb-1">Quantity (Barrels)</label>
+            <input asp-for="QuantityInBarrels" type="number" min="1" class="appearance-none rounded-lg w-full px-4 py-3 border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-primary-blue focus:border-primary-blue transition duration-150 ease-in-out" placeholder="Enter quantity" />
+            <span asp-validation-for="QuantityInBarrels" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- DeliveryAddress -->
+        <div>
+            <label asp-for="DeliveryAddress" class="block text-sm font-medium text-gray-700 mb-1">Delivery Address</label>
+            <input asp-for="DeliveryAddress" class="appearance-none rounded-lg w-full px-4 py-3 border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-primary-blue focus:border-primary-blue transition duration-150 ease-in-out" placeholder="Enter delivery address" />
+            <span asp-validation-for="DeliveryAddress" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- ContactPhoneNumber -->
+        <div>
+            <label asp-for="ContactPhoneNumber" class="block text-sm font-medium text-gray-700 mb-1">Contact Phone Number</label>
+            <input asp-for="ContactPhoneNumber" type="tel" class="appearance-none rounded-lg w-full px-4 py-3 border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-primary-blue focus:border-primary-blue transition duration-150 ease-in-out" placeholder="Enter contact phone number" />
+            <span asp-validation-for="ContactPhoneNumber" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-between items-center pt-4">
+            <!-- Create button -->
+            <button type="submit" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sidebar-bg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 transition duration-300 transform hover:scale-105">
+                <i class="fas fa-plus mr-2"></i> Create
+            </button>
+
+            <!-- Back link -->
+            <a asp-action="Index" class="text-primary-blue hover:text-blue-700 font-medium transition duration-150 ease-in-out">Back to List</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

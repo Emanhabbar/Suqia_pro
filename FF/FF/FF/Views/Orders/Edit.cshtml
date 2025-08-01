@@ -1,0 +1,78 @@
+﻿@model FF.Models.Order
+
+@{
+    ViewData["Title"] = "Edit Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Main container for the form, styled as a card -->
+<div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100 max-w-2xl mx-auto">
+    <form asp-action="Edit" class="space-y-6">
+        <div asp-validation-summary="ModelOnly" class="text-red-600 text-sm mb-4 font-medium" role="alert"></div>
+
+        <!-- Hidden Id field -->
+        <input type="hidden" asp-for="Id" />
+
+        <!-- Customer ID -->
+        <div>
+            <label asp-for="CustomerId" class="block text-sm font-medium text-gray-700 mb-1">Customer ID</label>
+            <input asp-for="CustomerId" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" />
+            <span asp-validation-for="CustomerId" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- Tank ID -->
+        <div>
+            <label asp-for="TankId" class="block text-sm font-medium text-gray-700 mb-1">Tank ID</label>
+            <input asp-for="TankId" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" />
+            <span asp-validation-for="TankId" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- QuantityInBarrels -->
+        <div>
+            <label asp-for="QuantityInBarrels" class="block text-sm font-medium text-gray-700 mb-1">Quantity (Barrels)</label>
+            <input asp-for="QuantityInBarrels" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" />
+            <span asp-validation-for="QuantityInBarrels" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- TotalPrice (readonly) -->
+        <div>
+            <label asp-for="TotalPrice" class="block text-sm font-medium text-gray-700 mb-1">Total Price</label>
+            <input asp-for="TotalPrice" readonly class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 bg-gray-50 text-gray-600 sm:text-base transition duration-150 ease-in-out" />
+        </div>
+
+        <!-- Status -->
+        <div>
+            <label asp-for="Status" class="block text-sm font-medium text-gray-700 mb-1">Status</label>
+            <select asp-for="Status" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" asp-items="ViewBag.StatusList"></select>
+            <span asp-validation-for="Status" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- Delivery Address -->
+        <div>
+            <label asp-for="DeliveryAddress" class="block text-sm font-medium text-gray-700 mb-1">Delivery Address</label>
+            <textarea asp-for="DeliveryAddress" rows="3" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out"></textarea>
+            <span asp-validation-for="DeliveryAddress" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- Contact Phone Number -->
+        <div>
+            <label asp-for="ContactPhoneNumber" class="block text-sm font-medium text-gray-700 mb-1">Contact Phone Number</label>
+            <input asp-for="ContactPhoneNumber" type="tel" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" />
+            <span asp-validation-for="ContactPhoneNumber" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-between items-center pt-4">
+            <button type="submit" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sidebar-bg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 transition duration-300 transform hover:scale-105">
+                <i class="fas fa-save mr-2"></i> Save
+            </button>
+
+            <a asp-action="Index" class="text-primary-blue hover:text-blue-700 font-medium transition duration-150 ease-in-out">Back to List</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+@{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

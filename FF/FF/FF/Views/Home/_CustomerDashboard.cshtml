@@ -1,0 +1,145 @@
+﻿@* Views/Home/_CustomerDashboard.cshtml *@
+@* This partial view displays the dashboard for the Customer role. *@
+@* It summarizes their recent orders and provides options to create new ones. *@
+
+@using FF.Data
+@using Microsoft.EntityFrameworkCore
+@using System.Security.Claims
+@inject ApplicationDbContext _context
+
+@{
+    var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+    // Fetch recent orders for the current customer
+    var recentOrders = await _context.Orders
+        .Include(o => o.Tank)
+        .Where(o => o.CustomerId == currentUserId)
+        .OrderByDescending(o => o.OrderDate)
+        .Take(5) // Display up to 5 recent orders
+        .ToListAsync();
+
+    var totalCustomerOrders = await _context.Orders.Where(o => o.CustomerId == currentUserId).CountAsync();
+    var newCustomerOrders = recentOrders.Count(o => o.Status == FF.Models.OrderStatus.New);
+    var inProgressCustomerOrders = recentOrders.Count(o => o.Status == FF.Models.OrderStatus.InProgress);
+}
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+    @* Customer Statistics Cards - Professional Design *@
+    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center text-center transform transition duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
+        <div class="text-primary-blue mb-3">
+            @* Using custom primary-blue color *@
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-dark-blue-text mb-2">إجمالي طلباتي</h3>
+        <p class="text-4xl font-bold text-primary-blue">@totalCustomerOrders</p>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center text-center transform transition duration-300 hover:scale-105 hover:shadow-xl border border-yellow-100">
+        @* Yellow for pending/in-progress orders *@
+        <div class="text-yellow-600 mb-3">
+            @* Using yellow for icon *@
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-dark-blue-text mb-2">طلباتي الجديدة/قيد التنفيذ</h3>
+        <p class="text-4xl font-bold text-yellow-700">@(newCustomerOrders + inProgressCustomerOrders)</p>
+    </div>
+</div>
+
+<div class="mt-8 p-4 bg-white rounded-xl shadow-lg border border-gray-100">
+    <h3 class="text-2xl font-semibold text-dark-blue-text mb-4 text-center">آخر طلباتي</h3>
+    @if (recentOrders.Any())
+    {
+        <div class="overflow-x-auto rounded-lg shadow-md border border-gray-200">
+            @* Added border and shadow to table container *@
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-blue-50">
+                    @* Light blue background for table header *@
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-secondary-gray uppercase tracking-wider">
+                            الصهريج
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-secondary-gray uppercase tracking-wider">
+                            الكمية (برميل)
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-secondary-gray uppercase tracking-wider">
+                            السعر الإجمالي
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-secondary-gray uppercase tracking-wider">
+                            تاريخ الطلب
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-secondary-gray uppercase tracking-wider">
+                            الحالة
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-secondary-gray uppercase tracking-wider">
+                            الإجراءات
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    @foreach (var item in recentOrders)
+                    {
+                        <tr class="hover:bg-gray-50 transition duration-150">
+                            @* Added hover effect to table rows *@
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-dark-blue-text">
+                                @Html.DisplayFor(modelItem => item.Tank.Name)
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-secondary-gray">
+                                @Html.DisplayFor(modelItem => item.QuantityInBarrels)
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-secondary-gray">
+                                @Html.DisplayFor(modelItem => item.TotalPrice)
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-secondary-gray">
+                                @item.OrderDate.ToString("dd/MM/yyyy HH:mm")
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                @{
+                                    string statusClass = "";
+                                    switch (item.Status)
+                                    {
+                                        case FF.Models.OrderStatus.New:
+                                            statusClass = "text-blue-600 bg-blue-100 px-2 py-1 rounded-full text-xs font-semibold";
+                                            break;
+                                        case FF.Models.OrderStatus.InProgress:
+                                            statusClass = "text-yellow-600 bg-yellow-100 px-2 py-1 rounded-full text-xs font-semibold";
+                                            break;
+                                        case FF.Models.OrderStatus.Delivered:
+                                            statusClass = "text-green-600 bg-green-100 px-2 py-1 rounded-full text-xs font-semibold";
+                                            break;
+                                        case FF.Models.OrderStatus.Canceled:
+                                            statusClass = "text-red-600 bg-red-100 px-2 py-1 rounded-full text-xs font-semibold";
+                                            break;
+                                    }
+                                }
+                                <span class="@statusClass">@Html.DisplayFor(modelItem => item.Status)</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <a asp-controller="Orders" asp-action="Details" asp-route-id="@item.Id" class="text-primary-blue hover:text-blue-700 mr-3 transition duration-150">التفاصيل</a>
+                                @if (item.Status == FF.Models.OrderStatus.New)
+                                {
+                                    <a asp-controller="Orders" asp-action="Edit" asp-route-id="@item.Id" class="text-green-600 hover:text-green-800 mr-3 transition duration-150">تعديل</a>
+                                    <a asp-controller="Orders" asp-action="Delete" asp-route-id="@item.Id" class="text-red-600 hover:text-red-800 transition duration-150">إلغاء</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <p class="text-lg text-secondary-gray text-center py-4">لم تقم بأي طلبات بعد.</p>
+    }
+</div>
+
+<div class="mt-8 p-4 text-center">
+    <a asp-controller="Orders" asp-action="Create" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue transition duration-300 transform hover:scale-105 mr-4">
+        <svg class="-ml-1 mr-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+        إنشاء طلب جديد
+    </a>
+    <a asp-controller="Orders" asp-action="Index" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-secondary-gray bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition duration-300 transform hover:scale-105">
+        <svg class="-ml-1 mr-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+        عرض جميع طلباتي
+    </a>
+</div>

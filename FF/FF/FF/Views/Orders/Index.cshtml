@@ -1,0 +1,84 @@
+﻿@model IEnumerable<FF.Models.Order>
+@using Microsoft.AspNetCore.Identity
+@using FF.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Order Management";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // تأكد أن هذا الـ Layout يحتوي على السايدبار
+}
+
+<!-- إضافة Font Awesome Icons عبر CDN -->
+<!-- يفضل إضافة هذا الرابط في ملف _Layout.cshtml إذا كان يستخدم في أكثر من صفحة -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVwRz58iM17z1u2uL10+o7Qk7K1oYwz535b5k9g7j5F+7I3BwS6v+5H40cR1B2wX8g0aY5w3bJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Table container -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+    <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-200" dir="rtl">
+            <thead class="bg-blue-50">
+                <tr>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">Customer</th>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">Tank</th>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">Quantity</th>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">Price</th>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">Date</th>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">Status</th>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">Address</th>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">Phone</th>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200 text-sm">
+                @foreach (var item in Model)
+                {
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-4 py-2 text-center">@item.Customer.FullName</td>
+                        <td class="px-4 py-2 text-center">@item.Tank.Name</td>
+                        <td class="px-4 py-2 text-center">@item.QuantityInBarrels</td>
+                        <td class="px-4 py-2 text-center">@item.TotalPrice</td>
+                        <td class="px-4 py-2 text-center">@item.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td class="px-4 py-2 text-center">
+                            @{
+                                string statusClass = item.Status switch
+                                {
+                                    FF.Models.OrderStatus.New => "text-blue-600 bg-blue-100",
+                                    FF.Models.OrderStatus.InProgress => "text-yellow-600 bg-yellow-100",
+                                    FF.Models.OrderStatus.Delivered => "text-green-600 bg-green-100",
+                                    FF.Models.OrderStatus.Canceled => "text-red-600 bg-red-100",
+                                    _ => "text-gray-600 bg-gray-100"
+                                };
+                            }
+                            <span class="@statusClass px-2 py-1 rounded-full text-xs font-semibold">@item.Status</span>
+                        </td>
+                        <td class="px-4 py-2 text-center">@item.DeliveryAddress</td>
+                        <td class="px-4 py-2 text-center">@item.ContactPhoneNumber</td>
+                        <td class="px-4 py-2 text-center">
+                            <div class="flex justify-center gap-x-4">
+                                <!-- Edit Icon -->
+                                <a asp-action="Edit" asp-route-id="@item.Id" title="Edit" class="text-gray-600 hover:text-gray-800 transition duration-150">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <!-- Details Icon -->
+                                <a asp-action="Details" asp-route-id="@item.Id" title="Details" class="text-gray-600 hover:text-gray-800 transition duration-150">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                                <!-- Delete Icon -->
+                                <a asp-action="Delete" asp-route-id="@item.Id" title="Delete" class="text-red-600 hover:text-red-800 transition duration-150">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Custom scripts if needed
+    </script>
+}
