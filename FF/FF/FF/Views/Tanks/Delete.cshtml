@@ -1,0 +1,75 @@
+﻿@model FF.Models.Tank
+
+@{
+    ViewData["Title"] = "Delete Tank"; // Changed title to be more specific
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Ensure it uses the sidebar layout
+}
+
+<div class="container mx-auto px-4 py-8 max-w-2xl">
+
+  
+
+    <!-- Main container for the details and form, styled as an elegant card -->
+    <div class="bg-white rounded-2xl shadow-xl border border-gray-200 p-8 transform transition duration-300 hover:shadow-2xl" dir="ltr">
+
+        <!-- Heading for the tank details section -->
+        <div class="border-b-2 border-gray-200 pb-4 mb-6">
+            <h4 class="text-xl font-semibold text-gray-800 text-left">Tank Information</h4>
+            <p class="text-sm text-gray-500">Review the details below before confirming the deletion.</p>
+        </div>
+
+        <!-- Details display section with a clean, spaced-out layout -->
+        <div class="space-y-5 mb-8">
+            <!-- Name Field -->
+            <div class="flex flex-col">
+                <span class="text-sm font-medium text-gray-500">Tank Name</span>
+                <p class="mt-1 text-gray-900 font-bold text-lg">@Html.DisplayFor(model => model.Name)</p>
+            </div>
+
+            <!-- Capacity Field -->
+            <div class="flex flex-col">
+                <span class="text-sm font-medium text-gray-500">Capacity</span>
+                <p class="mt-1 text-gray-900 font-bold text-lg">@Html.DisplayFor(model => model.Capacity) Barrels</p>
+            </div>
+
+            <!-- Price Per Barrel Field -->
+            <div class="flex flex-col">
+                <span class="text-sm font-medium text-gray-500">Price Per Barrel</span>
+                <p class="mt-1 text-gray-900 font-bold text-lg">$@Html.DisplayFor(model => model.PricePerBarrel)</p>
+            </div>
+
+            <!-- Owner Field -->
+            <div class="flex flex-col">
+                <span class="text-sm font-medium text-gray-500">Owner</span>
+                <p class="mt-1 text-gray-900 font-bold text-lg">@Html.DisplayFor(model => model.Owner.FullName)</p>
+            </div>
+
+            <!-- Areas Served Field -->
+            <div class="flex flex-col">
+                <span class="text-sm font-medium text-gray-500">Areas Served</span>
+                <p class="mt-1 text-gray-900 font-bold text-lg">@string.Join(", ", Model.Areas.Select(a => a.Name))</p>
+            </div>
+        </div>
+
+        <!-- Form for Delete Confirmation -->
+        <form asp-action="Delete" class="flex justify-between items-center pt-4">
+            <input type="hidden" asp-for="Id" />
+
+            <!-- Delete Button -->
+            <button type="submit" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition duration-300 transform hover:scale-105">
+                <i class="fas fa-trash-alt mr-2"></i> Delete
+            </button>
+
+            <!-- Back to List Link with an icon -->
+            <a asp-action="Index" class="inline-flex items-center text-blue-500 hover:text-blue-700 font-medium transition duration-150 ease-in-out">
+                <i class="fas fa-arrow-left mr-2 text-#1F2937 hover:text-blue-700"></i> Back to List
+            </a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

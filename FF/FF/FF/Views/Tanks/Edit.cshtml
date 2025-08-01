@@ -1,0 +1,95 @@
+﻿@model FF.Models.Tank
+@using Microsoft.AspNetCore.Identity @* To ensure User.IsInRole is available *@
+@using FF.Models @* Required for WaterType enum *@
+
+@{
+    ViewData["Title"] = "Edit Tank"; // Title back to English
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Ensure it uses the sidebar layout
+}
+
+<!-- Main container for the form, styled as a card -->
+<div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100 max-w-2xl mx-auto" dir="ltr">
+    <form asp-action="Edit" class="space-y-6">
+        <div asp-validation-summary="ModelOnly" class="text-red-600 text-sm mb-4 font-medium" role="alert"></div>
+
+        <!-- Hidden Id field -->
+        <input type="hidden" asp-for="Id" />
+
+        <!-- Name Field -->
+        <div>
+            <label asp-for="Name" class="block text-sm font-medium text-gray-700 mb-1">Tank Name</label>
+            <input asp-for="Name" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" />
+            <span asp-validation-for="Name" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- Capacity Field -->
+        <div>
+            <label asp-for="Capacity" class="block text-sm font-medium text-gray-700 mb-1">Capacity (Barrels)</label>
+            <input asp-for="Capacity" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" />
+            <span asp-validation-for="Capacity" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- Price Per Barrel Field -->
+        <div>
+            <label asp-for="PricePerBarrel" class="block text-sm font-medium text-gray-700 mb-1">Price Per Barrel</label>
+            <input asp-for="PricePerBarrel" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" />
+            <span asp-validation-for="PricePerBarrel" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- Location Field (New - integrated with original style) -->
+        <div>
+            <label asp-for="Location" class="block text-sm font-medium text-gray-700 mb-1">Location</label>
+            <input asp-for="Location" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" />
+            <span asp-validation-for="Location" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <!-- TypeOfWater Field (New - integrated with original style) -->
+        <div>
+            <label asp-for="TypeOfWater" class="block text-sm font-medium text-gray-700 mb-1">Type of Water</label>
+            <select asp-for="TypeOfWater" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" asp-items="Html.GetEnumSelectList<WaterType>()">
+                <option value="">Select Water Type</option>
+            </select>
+            <span asp-validation-for="TypeOfWater" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        @* --- OwnerId field: Only visible for Admin to select the owner --- *@
+        @if (User.IsInRole("Admin"))
+        {
+            <div>
+                <label asp-for="OwnerId" class="block text-sm font-medium text-gray-700 mb-1">Owner</label>
+                <select asp-for="OwnerId" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" asp-items="ViewBag.OwnerId"></select>
+                <span asp-validation-for="OwnerId" class="text-red-600 text-xs mt-1 block"></span>
+            </div>
+        }
+        else // If TankOwner, ensure current OwnerId is sent back to the POST
+        {
+            <input type="hidden" asp-for="OwnerId" />
+        }
+        @* --- End of OwnerId field --- *@
+
+        @* --- Areas selection field (multi-select) --- *@
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Areas Served</label>
+            <select name="selectedAreaIds" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" multiple asp-items="ViewBag.AvailableAreas"></select>
+            <span asp-validation-for="Areas" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+        @* --- End of Areas selection field --- *@
+
+        <!-- Buttons and Back to List Link Container -->
+        <div class="flex justify-between items-center pt-4">
+            <!-- Submit Button -->
+            <button type="submit" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sidebar-bg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 transition duration-300 transform hover:scale-105">
+                <i class="fas fa-save mr-2"></i> Save
+            </button>
+
+            <!-- Back to List Link -->
+            <a asp-action="Index" class="text-primary-blue hover:text-blue-700 font-medium transition duration-150 ease-in-out">Back to List</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
