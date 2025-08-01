@@ -1,4 +1,5 @@
-# Suqia_pro<img width="1843" height="889" alt="لقطة شاشة 2025-08-01 230117" src="https://github.com/user-attachments/assets/47f2d067-6de2-4724-a0ff-317c97af8ede" />
+# Suqia_pro<img width="1847" height="865" alt="لقطة شاشة 2025-08-01 230023" src="https://github.com/user-attachments/assets/91d0f66b-0a44-4eeb-9b99-4b650e7801d4" />
+
 مشروع السقيا (Suqia_pro)
 نظرة عامة على المشروع
 مشروع السقيا هو نظام رقمي متكامل لإدارة وتوزيع المياه. يهدف المشروع إلى تبسيط وتنظيم عملية توصيل المياه للمستهلكين من خلال منصة موحدة تربط بين العملاء وأصحاب الصهاريج وإدارة النظام.
@@ -50,9 +51,10 @@ dotnet run
 
 <img width="1855" height="913" alt="لقطة شاشة 2025-08-01 230101" src="https://github.com/user-attachments/assets/3668be9d-b40d-4add-b65c-6477a43c4cda" />
 <img width="1856" height="877" alt="لقطة شاشة 2025-08-01 230038" src="https://github.com/user-attachments/assets/cb09e710-f161-45e6-a7fc-34363b9137bd" />
-<img width="1847" height="865" alt="لقطة شاشة 2025-08-01 230023" src="https://github.com/user-attachments/assets/30bd7423-fca5-4417-b606-11fc11768518" />
+
 <img width="1903" height="915" alt="لقطة شاشة 2025-08-01 230250" src="https://github.com/user-attachments/assets/72f9ba48-d550-4c9a-bb6e-4cce930f4ad2" />
 <img width="1913" height="880" alt="لقطة شاشة 2025-08-01 230223" src="https://github.com/user-attachments/assets/aa82cf67-53f1-4e51-aef9-b0d01cbde235" />
+<img width="1843" height="889" alt="لقطة شاشة 2025-08-01 230117" src="https://github.com/user-attachments/assets/47f2d067-6de2-4724-a0ff-317c97af8ede" />
 <img width="1914" height="915" alt="لقطة شاشة 2025-08-01 230204" src="https://github.com/user-attachments/assets/893263c6-5c75-4d98-83ab-80088db9910d" /><img width="1911" height="906" alt="لقطة شاشة 2025-08-01 230445" src="https://github.com/user-attachments/assets/f796fbe2-d6e8-4061-<img width="1834" height="878" alt="لقطة شاشة 2025-08-01 230432" src="https://github.com/user-attachments/assets/1e345b7a-e1e7-41e7-b1e2-4df8f90ed40e" />
 88d3-1b11ef1cfeef" />
 
