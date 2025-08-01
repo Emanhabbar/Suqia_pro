@@ -1,0 +1,75 @@
+﻿@model FF.Models.Order
+
+@{
+    ViewData["Title"] = "Order Details"; // Page title in English
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Use sidebar layout
+}
+
+<!-- Main container for details, styled as a card -->
+<div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100 max-w-2xl mx-auto" dir="ltr">
+    @* Ensure left-to-right direction *@
+    <h4 class="text-2xl font-semibold text-gray-800 mb-6 border-b pb-2 text-left">Order Details</h4> @* Align left for LTR *@
+
+    <dl class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-left">
+        @* Use grid for better layout and left alignment *@
+        <div class="flex flex-col">
+            <dt class="text-sm font-medium text-gray-500">Customer</dt>
+            <dd class="mt-1 text-lg text-dark-blue-text font-semibold">
+                @Html.DisplayFor(model => model.Customer.FullName)
+            </dd>
+        </div>
+        <div class="flex flex-col">
+            <dt class="text-sm font-medium text-gray-500">Tank</dt>
+            <dd class="mt-1 text-lg text-dark-blue-text font-semibold">
+                @Html.DisplayFor(model => model.Tank.Name)
+            </dd>
+        </div>
+        <div class="flex flex-col">
+            <dt class="text-sm font-medium text-gray-500">Quantity (Barrels)</dt>
+            <dd class="mt-1 text-lg text-dark-blue-text">
+                @Html.DisplayFor(model => model.QuantityInBarrels)
+            </dd>
+        </div>
+        <div class="flex flex-col">
+            <dt class="text-sm font-medium text-gray-500">Total Price</dt>
+            <dd class="mt-1 text-lg text-dark-blue-text">
+                @Html.DisplayFor(model => model.TotalPrice)
+            </dd>
+        </div>
+        <div class="flex flex-col">
+            <dt class="text-sm font-medium text-gray-500">Order Date</dt>
+            <dd class="mt-1 text-lg text-dark-blue-text">
+                @Html.DisplayFor(model => model.OrderDate)
+            </dd>
+        </div>
+        <div class="flex flex-col">
+            <dt class="text-sm font-medium text-gray-500">Status</dt>
+            <dd class="mt-1 text-lg text-dark-blue-text">
+                @{
+                    string statusClass = Model.Status switch
+                    {
+                        FF.Models.OrderStatus.New => "text-blue-600 bg-blue-100 px-3 py-1 rounded-full text-sm font-semibold",
+                        FF.Models.OrderStatus.InProgress => "text-yellow-600 bg-yellow-100 px-3 py-1 rounded-full text-sm font-semibold",
+                        FF.Models.OrderStatus.Delivered => "text-green-600 bg-green-100 px-3 py-1 rounded-full text-sm font-semibold",
+                        FF.Models.OrderStatus.Canceled => "text-red-600 bg-red-100 px-3 py-1 rounded-full text-sm font-semibold",
+                        _ => ""
+                    };
+                }
+                <span class="@statusClass">@Html.DisplayFor(model => model.Status)</span>
+            </dd>
+        </div>
+    </dl>
+
+    <!-- Buttons container and back to list link -->
+    <div class="flex justify-between items-center pt-8">
+        @* Adjusted padding-top *@
+        <!-- Edit Button -->
+        <a asp-action="Index" class="text-primary-blue hover:text-blue-700 font-medium transition duration-150 ease-in-out">Back to List</a>
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sidebar-bg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 transition duration-300 transform hover:scale-105">
+            <i class="fas fa-edit mr-2"></i> Edit
+        </a>
+
+        <!-- Back to List Link -->
+
+    </div>
+</div>

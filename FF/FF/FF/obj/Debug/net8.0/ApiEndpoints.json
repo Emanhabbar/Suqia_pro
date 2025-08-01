@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "FF.Controllers.NotificationController",
+    "Method": "UpdateDeviceToken",
+    "RelativePath": "api/Notification/updateToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,82 @@
+﻿@model FF.Models.Order
+
+@{
+    ViewData["Title"] = "Delete Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!-- Main container styled as card -->
+<div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100 max-w-2xl mx-auto" dir="ltr">
+    <h4 class="text-2xl font-semibold text-gray-800 mb-6 border-b pb-2 text-left">Order Details</h4>
+
+    <div class="space-y-6 mb-8">
+
+        <!-- Customer Name (readonly) -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Customer</label>
+            <input value="@Model.Customer.FullName" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 cursor-not-allowed" readonly />
+        </div>
+
+        <!-- Tank Name (readonly) -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Tank</label>
+            <input value="@Model.Tank.Name" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 cursor-not-allowed" readonly />
+        </div>
+
+        <!-- QuantityInBarrels (readonly) -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Quantity (Barrels)</label>
+            <input value="@Model.QuantityInBarrels" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 cursor-not-allowed" readonly />
+        </div>
+
+        <!-- TotalPrice (readonly) -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Total Price</label>
+            <input value="@Model.TotalPrice" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 cursor-not-allowed" readonly />
+        </div>
+
+        <!-- OrderDate (readonly) -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Order Date</label>
+            <input value="@Model.OrderDate.ToString("yyyy-MM-dd")" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 cursor-not-allowed" readonly />
+        </div>
+
+        <!-- Status (readonly with badge) -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Status</label>
+            @{
+                string statusClass = Model.Status switch
+                {
+                    FF.Models.OrderStatus.New => "text-blue-600 bg-blue-100 px-3 py-1 rounded-full text-sm font-semibold",
+                    FF.Models.OrderStatus.InProgress => "text-yellow-600 bg-yellow-100 px-3 py-1 rounded-full text-sm font-semibold",
+                    FF.Models.OrderStatus.Delivered => "text-green-600 bg-green-100 px-3 py-1 rounded-full text-sm font-semibold",
+                    FF.Models.OrderStatus.Canceled => "text-red-600 bg-red-100 px-3 py-1 rounded-full text-sm font-semibold",
+                    _ => "text-gray-600 bg-gray-100 px-3 py-1 rounded-full text-sm font-semibold"
+                };
+            }
+            <span class="@statusClass">@Model.Status</span>
+        </div>
+
+    </div>
+
+    <!-- Form for Delete Confirmation -->
+    <form asp-action="Delete" class="flex justify-between items-center pt-4">
+        <input type="hidden" asp-for="Id" />
+
+        <!-- Delete button -->
+        <button type="submit" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition duration-300 transform hover:scale-105">
+            <i class="fas fa-trash-alt mr-2"></i> Delete
+        </button>
+
+        <!-- Back to list link -->
+        <a asp-action="Index" class="text-primary-blue hover:text-blue-700 font-medium transition duration-150 ease-in-out">Back to List</a>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

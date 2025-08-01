@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using FF.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<div class="flex flex-col items-start space-y-2">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        var currentUser = await UserManager.GetUserAsync(User);
+        var fullName = currentUser?.FullName ?? User.Identity.Name;
+
+        <a id="manage" class="text-sidebar-text hover:text-white font-medium transition duration-300 flex items-center" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+            <i class="fas fa-user-circle mr-2 text-xl"></i> @fullName!
+        </a>
+        <form id="logoutForm" class="w-full" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button id="logout" type="submit" class="w-full text-left p-2 rounded-lg text-sidebar-text hover:bg-sidebar-hover hover:text-white font-medium transition duration-300 bg-transparent border-none cursor-pointer flex items-center">
+                <i class="fas fa-sign-out-alt mr-2"></i> تسجيل الخروج
+            </button>
+        </form>
+    }
+    else
+    {
+        <a class="w-full text-left p-2 rounded-lg text-sidebar-text hover:bg-sidebar-hover hover:text-white font-medium transition duration-300 flex items-center" id="register" asp-area="Identity" asp-page="/Account/Register">
+            <i class="fas fa-user-plus mr-2"></i> تسجيل
+        </a>
+        <a class="w-full text-left p-2 rounded-lg text-sidebar-text hover:bg-sidebar-hover hover:text-white font-medium transition duration-300 flex items-center" id="login" asp-area="Identity" asp-page="/Account/Login">
+            <i class="fas fa-sign-in-alt mr-2"></i> تسجيل الدخول
+        </a>
+    }
+</div>

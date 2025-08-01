@@ -1,0 +1,29 @@
+﻿@*
+    Views/Admin/Dashboard.cshtml
+
+    This is the main dashboard view for the Admin role.
+    It uses the _Layout.cshtml (with sidebar) and initially displays
+    a welcome message. Content can be added here later.
+*@
+
+@{
+    ViewData["Title"] = "Admin Panel"; // Title for the browser tab and top navbar
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Use the layout with sidebar
+}
+
+<h1 class="text-4xl font-bold text-dark-blue-text mb-6">Welcome to Admin Panel!</h1>
+
+<div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+    <p class="text-lg text-secondary-gray">
+        Use the sidebar navigation to manage different aspects of the system.
+    </p>
+    <p class="mt-4 text-base text-gray-600">
+        Here you can view summaries, manage users, areas, tanks, and orders.
+    </p>
+</div>
+
+@section Scripts {
+    <script>
+        // Any specific scripts for the Admin Dashboard can go here.
+    </script>
+}

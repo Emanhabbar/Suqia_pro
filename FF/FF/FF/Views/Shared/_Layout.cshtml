@@ -1,0 +1,295 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using FF.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@using System.Security.Claims
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Saqia Project</title>
+
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        if (User.IsInRole("Customer") || User.IsInRole("TankOwner"))
+        {
+            <script type="module">
+              
+                import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+                import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
+                import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-messaging.js";
+
+                const firebaseConfig = {
+                    apiKey: "AIzaSyDhjBdgvyPh3SUSj8q-FxeneZxqnqYakxk",
+                    authDomain: "saqyaapp.firebaseapp.com",
+                    projectId: "saqyaapp",
+                    storageBucket: "saqyaapp.firebasestorage.app",
+                    messagingSenderId: "686762686266",
+                    appId: "1:686762686266:web:4d7202aa3b982781664203",
+                    measurementId: "G-HP5LEXXSNT"
+                };
+
+                const app = initializeApp(firebaseConfig);
+                const analytics = getAnalytics(app);
+
+                const messaging = getMessaging(app);
+
+              
+                function showToastNotification(title, body) {
+                    const toastContainer = document.getElementById('toast-container');
+                    const toast = document.createElement('div');
+                    toast.className = 'bg-white text-gray-800 p-4 rounded-lg shadow-xl flex items-center space-x-3 transform transition-transform duration-500 ease-out translate-x-full';
+                    toast.innerHTML = `
+                        <i class="fas fa-bell text-2xl text-#1F2937"></i>
+                        <div>
+                            <div class="font-bold">${title}</div>
+                            <div>${body}</div>
+                        </div>
+                        <button onclick="this.parentNode.remove()" class="text-gray-500 text-lg ml-auto hover:text-gray-700">
+                            &times;
+                        </button>
+                    `;
+
+                    toastContainer.appendChild(toast);
+
+                    setTimeout(() => {
+                        toast.classList.remove('translate-x-full');
+                        toast.style.transform = 'translateX(0)';
+                    }, 100);
+
+                    setTimeout(() => {
+                        toast.style.transform = 'translateX(120%)';
+                        setTimeout(() => toast.remove(), 500);
+                    }, 5000);
+                }
+
+                async function sendTokenToBackend(token) {
+                    const antiForgeryToken = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+                    try {
+                        const response = await fetch('/api/Notification/updateToken', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'X-CSRF-TOKEN': antiForgeryToken
+                            },
+                            body: JSON.stringify(token)
+                        });
+
+                        if (response.ok) {
+                            console.log('تم إرسال رمز الجهاز إلى الواجهة الخلفية بنجاح.');
+                        } else {
+                            const errorText = await response.text();
+                            console.error('فشل في إرسال رمز الجهاز إلى الواجهة الخلفية:', errorText);
+                        }
+                    } catch (error) {
+                        console.error('حدث خطأ أثناء إرسال رمز الجهاز:', error);
+                    }
+                }
+
+                async function requestPermission() {
+                    console.log('جارٍ طلب الإذن...');
+                    const permission = await Notification.requestPermission();
+                    if (permission === 'granted') {
+                        console.log('تم منح إذن الإشعارات.');
+                        try {
+                            const vapidKey = "BE2fJf0CIkJwEYoouGGrloUcyAeu52-CF1bBhGKjxJwF3Rlomp9uYPXrxS3NKd9h9uZGozkPoq2PuBym430lAIk";
+                            const token = await getToken(messaging, { vapidKey });
+                            console.log('رمز جهاز FCM:', token);
+
+                            await sendTokenToBackend(token);
+
+                        } catch (error) {
+                            console.error('حدث خطأ أثناء الحصول على رمز جهاز FCM:', error);
+                        }
+                    } else {
+                        console.log('تعذر الحصول على إذن الإشعارات.');
+                    }
+                }
+
+                requestPermission();
+
+                onMessage(messaging, (payload) => {
+                    console.log('تم استلام رسالة أثناء وجود التطبيق في المقدمة:', payload);
+                    const notificationTitle = payload.notification.title;
+                    const notificationBody = payload.notification.body;
+
+                    const notificationOptions = {
+                        body: notificationBody,
+                        icon: '/firebase-logo.png'
+                    };
+                    new Notification(notificationTitle, notificationOptions);
+
+                    showToastNotification(notificationTitle, notificationBody);
+                });
+            </script>
+        }
+    }
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#2563EB',
+                        'secondary-gray': '#6B7280',
+                        'light-blue-bg': '#EFF6FF',
+                        'dark-blue-text': '#1E3A8A',
+                        'sidebar-bg': '#1F2937',
+                        'sidebar-text': '#D1D5DB',
+                        'sidebar-hover': '#374151',
+                    }
+                },
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+    @Html.AntiForgeryToken()
+</head>
+<body class="font-sans antialiased flex h-screen bg-gradient-to-br from-blue-50 to-blue-200">
+    <div class="flex flex-grow w-full">
+
+       
+        <aside class="w-64 flex-shrink-0 bg-sidebar-bg text-sidebar-text flex flex-col h-screen sticky top-0 shadow-lg z-40">
+            <div class="p-6 border-b border-gray-700 flex align-items-start justify-start gap-4 ">
+              
+                <a class="text-xl font-extrabold text-white hover:text-gray-300 transition duration-300"
+                   asp-area="" asp-controller="Home" asp-action="Index">
+                    Suqia project
+                </a>
+            </div>
+
+          
+            <nav class="flex-grow p-4">
+                <ul class="space-y-2">
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Index" class="flex items-center p-3 rounded-lg hover:bg-sidebar-hover transition duration-200 text-sidebar-text hover:text-white">
+                            <i class="fas fa-home w-5 h-5 mr-3"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        if (User.IsInRole("Admin"))
+                        {
+                            <li>
+                                <a asp-area="" asp-controller="Areas" asp-action="Index" class="flex items-center p-3 rounded-lg hover:bg-sidebar-hover transition duration-200 text-sidebar-text hover:text-white">
+                                    <i class="fas fa-map w-5 h-5 mr-3"></i>
+                                    <span>Manage Areas</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Tanks" asp-action="Index" class="flex items-center p-3 rounded-lg hover:bg-sidebar-hover transition duration-200 text-sidebar-text hover:text-white">
+                                    <i class="fas fa-gas-pump w-5 h-5 mr-3"></i>
+                                    <span>Manage Tanks</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Orders" asp-action="Index" class="flex items-center p-3 rounded-lg hover:bg-sidebar-hover transition duration-200 text-sidebar-text hover:text-white">
+                                    <i class="fas fa-clipboard-list w-5 h-5 mr-3"></i>
+                                    <span>Manage Orders</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="AdminDashboard" class="flex items-center p-3 rounded-lg hover:bg-sidebar-hover transition duration-200 text-sidebar-text hover:text-white">
+                                    <i class="fas fa-tachometer-alt w-5 h-5 mr-3"></i>
+                                    <span>Admin Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-area="Identity" asp-page="/Account/Register" class="flex items-center p-3 rounded-lg hover:bg-sidebar-hover transition duration-200 text-sidebar-text hover:text-white">
+                                    <i class="fas fa-users w-5 h-5 mr-3"></i>
+                                    <span>Manage Users</span>
+                                </a>
+                            </li>
+                        }
+                        else if (User.IsInRole("TankOwner"))
+                        {
+                            <li>
+                                <a asp-area="" asp-controller="Tanks" asp-action="Index" class="flex items-center p-3 rounded-lg hover:bg-sidebar-hover transition duration-200 text-sidebar-text hover:text-white">
+                                    <i class="fas fa-gas-pump w-5 h-5 mr-3"></i>
+                                    <span>My Tanks</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Orders" asp-action="Index" class="flex items-center p-3 rounded-lg hover:bg-sidebar-hover transition duration-200 text-sidebar-text hover:text-white">
+                                    <i class="fas fa-clipboard-list w-5 h-5 mr-3"></i>
+                                    <span>My Orders</span>
+                                </a>
+                            </li>
+                        }
+                        else if (User.IsInRole("Customer"))
+                        {
+                            <li>
+                                <a asp-area="" asp-controller="Orders" asp-action="Index" class="flex items-center p-3 rounded-lg hover:bg-sidebar-hover transition duration-200 text-sidebar-text hover:text-white">
+                                    <i class="fas fa-clipboard-list w-5 h-5 mr-3"></i>
+                                    <span>My Orders</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Orders" asp-action="Create" class="flex items-center p-3 rounded-lg hover:bg-sidebar-hover transition duration-200 text-sidebar-text hover:text-white">
+                                    <i class="fas fa-plus-circle w-5 h-5 mr-3"></i>
+                                    <span>Create New Order</span>
+                                </a>
+                            </li>
+                        }
+                    }
+                </ul>
+            </nav>
+            <div class="p-4 border-t border-gray-700">
+                <partial name="_LoginPartialSidebar" />
+            </div>
+        </aside>
+
+        <div class="flex-grow flex flex-col h-screen">
+            <header class="bg-white shadow-md py-4 px-6 flex justify-between items-center z-30 flex-shrink-0">
+                <div class="flex items-center m-2">
+                    <div class="text-xl font-semibold text-#1F2937">@ViewData["Title"]</div>
+                </div>
+                @* <div class="flex items-center space-x-4">
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <span class="text-gray-700 text-base font-semibold flex items-center space-x-2">
+                            <span> @((await UserManager.GetUserAsync(User))?.FullName ?? User.Identity?.Name)</span>
+                            <i class="fas fa-user-circle text-2xl text-p"></i>
+                        </span>
+
+                    }
+                    else
+                    {
+                        <a asp-area="Identity" asp-page="/Account/Login" class="text-primary-blue hover:underline">تسجيل الدخول</a>
+                    }
+                </div> *@
+            </header>
+
+            <main role="main" class="flex-grow p-6 overflow-y-auto min-h-0">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <div id="toast-container" class="fixed bottom-4 right-4 z-[9999] space-y-2">
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

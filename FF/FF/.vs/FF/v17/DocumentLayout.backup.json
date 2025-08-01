@@ -1,0 +1,1130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\tanks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\tanks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\orders\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\orders\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\tanks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\tanks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\tanks\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\tanks\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\tanks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\tanks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\tanks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\tanks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\areas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\areas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\home\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\home\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\shared\\_loginpartialsidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\shared\\_loginpartialsidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\ff.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\ff.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\areas\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\areas\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\wwwroot\\firebase-messaging-sw.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\wwwroot\\firebase-messaging-sw.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\home\\_tankownerdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\home\\_tankownerdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\models\\order.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\models\\order.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250730203026_Adddb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FF\\Data\\Migrations\\20250730203026_Adddb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250730201404_AddDeviceTokenToUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FF\\Data\\Migrations\\20250730201404_AddDeviceTokenToUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250730201030_AddDeviceTokenToUsers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FF\\Data\\Migrations\\20250730201030_AddDeviceTokenToUsers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\home\\_customerdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\home\\_customerdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\controllers\\tankscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\controllers\\tankscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\models\\tank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\models\\tank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\areas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\areas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\areas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\areas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\areas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\areas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\models\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\models\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\controllers\\areascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\controllers\\areascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\dataseeds\\defaultroles.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\dataseeds\\defaultroles.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rock\\source\\repos\\F\\F\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\data\\migrations\\20250710195533_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\data\\migrations\\20250710195533_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|c:\\users\\rock\\source\\repos\\ff\\ff\\ff\\data\\migrations\\20250712180900_addnewpropertiestomodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{811B74F4-C682-4EEC-B0E8-04D757C97A74}|FF\\FF.csproj|solutionrelative:ff\\data\\migrations\\20250712180900_addnewpropertiestomodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "FF\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "FF\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T11:17:42.148Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Home\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Home\\AdminDashboard.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Home\\AdminDashboard.cshtml",
+              "RelativeToolTip": "FF\\Views\\Home\\AdminDashboard.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAF8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T18:24:53.77Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Tank.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\Tank.cs",
+              "RelativeDocumentMoniker": "FF\\Models\\Tank.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\Tank.cs",
+              "RelativeToolTip": "FF\\Models\\Tank.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:02:43.342Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Tanks\\Index.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Tanks\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Tanks\\Index.cshtml",
+              "RelativeToolTip": "FF\\Views\\Tanks\\Index.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAADYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:49:44.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Tanks\\Details.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Tanks\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Tanks\\Details.cshtml",
+              "RelativeToolTip": "FF\\Views\\Tanks\\Details.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:49:36.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Tanks\\Delete.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Tanks\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Tanks\\Delete.cshtml",
+              "RelativeToolTip": "FF\\Views\\Tanks\\Delete.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:49:31.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "FF\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAiwDsAAACDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T19:22:03.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Orders\\Delete.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Orders\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Orders\\Delete.cshtml",
+              "RelativeToolTip": "FF\\Views\\Orders\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T11:35:52.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "FF\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACgAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T10:53:04.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FF\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAAAAUBAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:48:13.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Tanks\\Create.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Tanks\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Tanks\\Create.cshtml",
+              "RelativeToolTip": "FF\\Views\\Tanks\\Create.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAiwE0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:49:25.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Tanks\\Edit.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Tanks\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Tanks\\Edit.cshtml",
+              "RelativeToolTip": "FF\\Views\\Tanks\\Edit.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:49:40.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Areas\\Index.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Areas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Areas\\Index.cshtml",
+              "RelativeToolTip": "FF\\Views\\Areas\\Index.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAiwCsAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:47:51.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_LoginPartialSidebar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_LoginPartialSidebar.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Shared\\_LoginPartialSidebar.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_LoginPartialSidebar.cshtml",
+              "RelativeToolTip": "FF\\Views\\Shared\\_LoginPartialSidebar.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T19:50:04.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "FF\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABcAAACqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:48:26.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_AuthLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Shared\\_AuthLayout.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeToolTip": "FF\\Views\\Shared\\_AuthLayout.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T17:35:39.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FF.csproj",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\FF.csproj",
+              "RelativeDocumentMoniker": "FF\\FF.csproj",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\FF.csproj",
+              "RelativeToolTip": "FF\\FF.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-10T19:09:34.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "FF\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "FF\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAHsBAAAAAAAAAAAgwIgBAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T20:24:35.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Areas\\Delete.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Areas\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Areas\\Delete.cshtml",
+              "RelativeToolTip": "FF\\Views\\Areas\\Delete.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:47:35.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "firebase-messaging-sw.js",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\wwwroot\\firebase-messaging-sw.js",
+              "RelativeDocumentMoniker": "FF\\wwwroot\\firebase-messaging-sw.js",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\wwwroot\\firebase-messaging-sw.js",
+              "RelativeToolTip": "FF\\wwwroot\\firebase-messaging-sw.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-30T19:00:19.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_TankOwnerDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Home\\_TankOwnerDashboard.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Home\\_TankOwnerDashboard.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Home\\_TankOwnerDashboard.cshtml",
+              "RelativeToolTip": "FF\\Views\\Home\\_TankOwnerDashboard.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T18:25:18.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "FF\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T19:36:20.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Order.cs.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\Order.cs.cs",
+              "RelativeDocumentMoniker": "FF\\Models\\Order.cs.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\Order.cs.cs",
+              "RelativeToolTip": "FF\\Models\\Order.cs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:02:27.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "FF\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "FF\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:02:04.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Orders\\Create.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Orders\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Orders\\Create.cshtml",
+              "RelativeToolTip": "FF\\Views\\Orders\\Create.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAiwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T20:44:32.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "FF\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "FF\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T19:32:59.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "FF\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "FF\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T20:28:17.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20250730203026_Adddb.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250730203026_Adddb.cs",
+              "RelativeDocumentMoniker": "FF\\Data\\Migrations\\20250730203026_Adddb.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250730203026_Adddb.cs",
+              "RelativeToolTip": "FF\\Data\\Migrations\\20250730203026_Adddb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T20:30:26.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "FF\\Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "FF\\Controllers\\NotificationController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T20:15:52.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20250730201404_AddDeviceTokenToUser.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250730201404_AddDeviceTokenToUser.cs",
+              "RelativeDocumentMoniker": "FF\\Data\\Migrations\\20250730201404_AddDeviceTokenToUser.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250730201404_AddDeviceTokenToUser.cs",
+              "RelativeToolTip": "FF\\Data\\Migrations\\20250730201404_AddDeviceTokenToUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T20:14:04.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20250730201030_AddDeviceTokenToUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250730201030_AddDeviceTokenToUsers.cs",
+              "RelativeDocumentMoniker": "FF\\Data\\Migrations\\20250730201030_AddDeviceTokenToUsers.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250730201030_AddDeviceTokenToUsers.cs",
+              "RelativeToolTip": "FF\\Data\\Migrations\\20250730201030_AddDeviceTokenToUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T20:10:30.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "FF\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Services\\NotificationService.cs",
+              "RelativeToolTip": "FF\\Services\\NotificationService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T20:08:46.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Program.cs",
+              "RelativeDocumentMoniker": "FF\\Program.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Program.cs",
+              "RelativeToolTip": "FF\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAACIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:06:09.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\appsettings.json",
+              "RelativeDocumentMoniker": "FF\\appsettings.json",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\appsettings.json",
+              "RelativeToolTip": "FF\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-10T19:52:36.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "FF\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "FF\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-30T18:59:38.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "FF\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T17:38:08.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "_CustomerDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Home\\_CustomerDashboard.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Home\\_CustomerDashboard.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Home\\_CustomerDashboard.cshtml",
+              "RelativeToolTip": "FF\\Views\\Home\\_CustomerDashboard.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAJEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T18:25:37.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "FF\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T17:39:17.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Orders\\Edit.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Orders\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Orders\\Edit.cshtml",
+              "RelativeToolTip": "FF\\Views\\Orders\\Edit.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAiwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-13T09:09:30.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "FF\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FF\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:45:52.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "FF\\Models\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "FF\\Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:02:17.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "TanksController.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\TanksController.cs",
+              "RelativeDocumentMoniker": "FF\\Controllers\\TanksController.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\TanksController.cs",
+              "RelativeToolTip": "FF\\Controllers\\TanksController.cs",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAAAAYBAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:45:59.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Areas\\Edit.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Areas\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Areas\\Edit.cshtml",
+              "RelativeToolTip": "FF\\Views\\Areas\\Edit.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:47:46.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Orders\\Details.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Orders\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Orders\\Details.cshtml",
+              "RelativeToolTip": "FF\\Views\\Orders\\Details.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-13T09:08:16.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Areas\\Details.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Areas\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Areas\\Details.cshtml",
+              "RelativeToolTip": "FF\\Views\\Areas\\Details.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:47:40.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Areas\\Create.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Areas\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Areas\\Create.cshtml",
+              "RelativeToolTip": "FF\\Views\\Areas\\Create.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:47:26.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "FF\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "FF\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:17:58.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "FF\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "FF\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-11T11:51:23.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20250712180900_AddNewPropertiesToModels.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250712180900_AddNewPropertiesToModels.cs",
+              "RelativeDocumentMoniker": "FF\\Data\\Migrations\\20250712180900_AddNewPropertiesToModels.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250712180900_AddNewPropertiesToModels.cs",
+              "RelativeToolTip": "FF\\Data\\Migrations\\20250712180900_AddNewPropertiesToModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T18:09:00.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Area.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\Area.cs",
+              "RelativeDocumentMoniker": "FF\\Models\\Area.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\Area.cs",
+              "RelativeToolTip": "FF\\Models\\Area.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:02:10.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AreasController.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\AreasController.cs",
+              "RelativeDocumentMoniker": "FF\\Controllers\\AreasController.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Controllers\\AreasController.cs",
+              "RelativeToolTip": "FF\\Controllers\\AreasController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAUwKEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:45:40.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "FF\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "FF\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:22:57.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "FF\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "FF\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T17:44:16.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "FF\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "FF\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T11:48:49.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "FF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T11:51:24.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "FF\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "FF\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T11:51:23.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "FF\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "FF\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAcwI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T17:15:40.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "DefaultRoles.cs.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\DataSeeds\\DefaultRoles.cs.cs",
+              "RelativeDocumentMoniker": "FF\\DataSeeds\\DefaultRoles.cs.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\DataSeeds\\DefaultRoles.cs.cs",
+              "RelativeToolTip": "FF\\DataSeeds\\DefaultRoles.cs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:02:54.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "FF\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "FF\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T12:36:10.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "FF\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "FF\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:02:23.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "FF\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+              "RelativeToolTip": "FF\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T11:10:12.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FF\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "RelativeToolTip": "FF\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T19:16:46.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20250710195533_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250710195533_InitialCreate.cs",
+              "RelativeDocumentMoniker": "FF\\Data\\Migrations\\20250710195533_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\Data\\Migrations\\20250710195533_InitialCreate.cs",
+              "RelativeToolTip": "FF\\Data\\Migrations\\20250710195533_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:55:33.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\F\\F\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\F\\F\\appsettings.json",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\F\\F\\appsettings.json",
+              "RelativeToolTip": "..\\..\\F\\F\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-10T19:53:47.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "FF\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\appsettings.Development.json",
+              "RelativeToolTip": "FF\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-10T19:53:31.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAP0UAAAAAAAAAAAEwBEVAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-07-10T19:24:20.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "FF\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\Rock\\source\\repos\\FF\\FF\\FF\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "FF\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-10T19:14:01.866Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

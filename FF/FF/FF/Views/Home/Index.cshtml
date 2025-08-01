@@ -1,0 +1,147 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using FF.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Home - Saqia Project";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+<!-- Subtle Background Gradient -->
+<div class="fixed inset-0 bg-blue-200 -z-10"></div>
+
+<!-- Main Content Container with a modern, glass-like card effect -->
+<div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative z-10 font-sans">
+    <div class="max-w-4xl w-full space-y-10 p-12 bg-white/60 backdrop-blur-lg rounded-3xl shadow-3xl border border-white transform transition-all duration-500">
+        <div class="text-center">
+            <h1 class="text-6xl font-extrabold text-gray-900 mb-4 animate-fade-in-down drop-shadow-md">
+                Welcome to Saqia Project!
+            </h1>
+            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto animate-fade-in-up">
+                Your reliable digital system for efficient water distribution and management. We ensure seamless water supply to all regions, tracking requests.
+            </p>
+        </div>
+
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <div class="mt-12 text-center">
+                @if (User.IsInRole("Admin"))
+                {
+                    <div class="flex justify-center">
+                        <a asp-controller="Admin" asp-action="Dashboard"
+                           class="inline-flex items-center justify-center bg-gray-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2">
+                            <i class="fas fa-chart-line text-xl mr-3"></i>
+                            Go to Admin Dashboard
+                        </a>
+                    </div>
+                }
+                else if (User.IsInRole("TankOwner"))
+                {
+                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-10">
+                        <a asp-controller="Tanks" asp-action="Index"
+                           class="inline-flex items-center justify-center bg-gray-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2">
+                            <i class="fas fa-truck-container text-xl mr-3"></i>
+                            Manage My Tanks
+                        </a>
+                        <a asp-controller="Orders" asp-action="Index"
+                           class="inline-flex items-center justify-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+                            <i class="fas fa-list-alt text-xl mr-3"></i>
+                            Manage Orders
+                        </a>
+                    </div>
+
+                }
+                else if (User.IsInRole("Customer"))
+                {
+                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-10">
+                        <a asp-controller="Orders" asp-action="Create"
+                           class="inline-flex items-center justify-center bg-gray-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2">
+                            <i class="fas fa-plus-circle text-xl mr-3"></i>
+                            Create New Order
+                        </a>
+                        <a asp-controller="Orders" asp-action="Index"
+                           class="inline-flex items-center justify-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+                            <i class="fas fa-truck text-xl mr-3"></i>
+                            View My Orders
+                        </a>
+                    </div>
+
+                }
+                else
+                {
+                    <p class="text-lg text-gray-600">
+                        You do not have a specific role yet. Please contact the administrator to assign your role.
+                    </p>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="mt-12 text-center">
+                <p class="text-xl text-gray-600 mb-8 max-w-xl mx-auto">
+                    Please log in or create a new account to access our services.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+                    <a asp-area="Identity" asp-page="/Account/Login"
+                       class="w-full sm:w-60 inline-flex items-center justify-center bg-gray-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-center hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2">
+                        <i class="fas fa-sign-in-alt text-xl mr-3"></i>
+                        Log In
+                    </a>
+                    <a asp-area="Identity" asp-page="/Account/Register"
+                       class="w-full sm:w-60 inline-flex items-center justify-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+                        <i class="fas fa-user-plus text-xl mr-3"></i>
+                        Create Account
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script></script>
+}
+
+<style>
+    /* Adding Font Awesome for icons */
+    @@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+    @@keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @@keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in-down {
+        animation: fadeInDown 1s ease-out forwards;
+    }
+
+    .animate-fade-in-up {
+        animation: fadeInUp 1s ease-out forwards;
+        animation-delay: 0.3s;
+    }
+
+    /* Custom shadow class for a more pronounced effect */
+    .shadow-3xl {
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+</style>

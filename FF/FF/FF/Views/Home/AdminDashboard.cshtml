@@ -1,0 +1,96 @@
+﻿@* Views/Home/AdminDashboard.cshtml *@
+@* This view displays the dashboard for the Admin role. *@
+@* It summarizes key statistics like total users, tanks, orders, and areas. *@
+
+@using FF.Data
+@using Microsoft.EntityFrameworkCore
+@inject ApplicationDbContext _context
+
+@{
+    ViewData["Title"] = "Panel Control"; // Set the title for this specific page
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Ensure it uses the correct layout
+
+    // Fetch counts for Admin Dashboard
+    var totalUsers = await _context.Users.CountAsync();
+    var totalTanks = await _context.Tanks.CountAsync();
+    var totalOrders = await _context.Orders.CountAsync();
+    var totalAreas = await _context.Areas.CountAsync();
+
+    var newOrders = await _context.Orders.Where(o => o.Status == FF.Models.OrderStatus.New).CountAsync();
+    var inProgressOrders = await _context.Orders.Where(o => o.Status == FF.Models.OrderStatus.InProgress).CountAsync();
+    var deliveredOrders = await _context.Orders.Where(o => o.Status == FF.Models.OrderStatus.Delivered).CountAsync();
+    var canceledOrders = await _context.Orders.Where(o => o.Status == FF.Models.OrderStatus.Canceled).CountAsync();
+}
+
+@* <h1 class="text-4xl font-bold text-dark-blue-text mb-6 text-center">لوحة التحكم الإدارية</h1> *@
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-2">
+    <!-- Users -->
+    <div class="bg-white rounded-lg shadow-md p-2 flex flex-col items-center justify-center text-center transform transition duration-300 hover:scale-105 hover:shadow-lg border border-gray-100">
+        <div class="text-primary-blue mb-2">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H2v-2a3 3 0 015.356-1.857M9 20v-2m3 2v-2m3 2v-2M9 16H2m3 0h.01M14 16h.01M19 16h.01" />
+            </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-dark-blue-text mb-1">إجمالي المستخدمين</h3>
+        <p class="text-2xl font-bold text-primary-blue">@totalUsers</p>
+    </div>
+
+    <!-- Tanks -->
+    <div class="bg-white rounded-lg shadow-md p-2 flex flex-col items-center justify-center text-center transform transition duration-300 hover:scale-105 hover:shadow-lg border border-gray-100">
+        <div class="text-green-600 mb-2">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4m0-10h.01" />
+            </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-dark-blue-text mb-1">إجمالي الصهاريج</h3>
+        <p class="text-2xl font-bold text-green-700">@totalTanks</p>
+    </div>
+
+    <!-- Orders -->
+    <div class="bg-white rounded-lg shadow-md p-2 flex flex-col items-center justify-center text-center transform transition duration-300 hover:scale-105 hover:shadow-lg border border-gray-100">
+        <div class="text-purple-600 mb-2">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-dark-blue-text mb-1">إجمالي الطلبات</h3>
+        <p class="text-2xl font-bold text-purple-700">@totalOrders</p>
+    </div>
+
+    <!-- Areas -->
+    <div class="bg-white rounded-lg shadow-md p-2 flex flex-col items-center justify-center text-center transform transition duration-300 hover:scale-105 hover:shadow-lg border border-gray-100">
+        <div class="text-yellow-600 mb-2">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0L6.343 16.657m11.314-11.314L12 10.657m4.95 4.95L17.657 16.657M12 10.657l-4.95-4.95m4.95 4.95L12 10.657m-4.95-4.95L6.343 16.657m0 0L4 18.943m-2.28 2.28a1.998 1.998 0 01-2.828 0L.707 19.657m1.414 1.414L3.536 20.9m11.314-11.314L12 10.657m4.95 4.95L17.657 16.657" />
+            </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-dark-blue-text mb-1">إجمالي المناطق</h3>
+        <p class="text-2xl font-bold text-yellow-700">@totalAreas</p>
+    </div>
+</div>
+<div class="mt-6 p-3 bg-white rounded-lg shadow-md border border-gray-100">
+    <h3 class="text-xl font-semibold text-dark-blue-text mb-3 text-center">حالة الطلبات</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="flex flex-col items-center justify-center p-2 bg-light-blue-bg rounded-md shadow-sm border border-blue-100">
+            <p class="text-base font-medium text-secondary-gray">جديد</p>
+            <p class="text-2xl font-bold text-primary-blue">@newOrders</p>
+        </div>
+        <div class="flex flex-col items-center justify-center p-2 bg-yellow-50 rounded-md shadow-sm border border-yellow-100">
+            <p class="text-base font-medium text-secondary-gray">قيد التنفيذ</p>
+            <p class="text-2xl font-bold text-yellow-600">@inProgressOrders</p>
+        </div>
+        <div class="flex flex-col items-center justify-center p-2 bg-green-50 rounded-md shadow-sm border border-green-100">
+            <p class="text-base font-medium text-secondary-gray">تم التسليم</p>
+            <p class="text-2xl font-bold text-green-600">@deliveredOrders</p>
+        </div>
+        <div class="flex flex-col items-center justify-center p-2 bg-red-50 rounded-md shadow-sm border border-red-100">
+            <p class="text-base font-medium text-secondary-gray">ملغاة</p>
+            <p class="text-2xl font-bold text-red-600">@canceledOrders</p>
+        </div>
+    </div>
+</div>

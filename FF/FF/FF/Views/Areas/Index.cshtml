@@ -1,0 +1,67 @@
+﻿@model IEnumerable<FF.Models.Area>
+
+@{
+    ViewData["Title"] = "Manage Areas";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Ensure it uses the sidebar layout
+}
+
+
+
+<div class="mb-6">
+    <a asp-action="Create" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sidebar-bg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 transition duration-300 transform hover:scale-105">
+        <i class="fas fa-plus-circle mr-2"></i> Create New
+    </a>
+</div>
+
+<div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+    <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-200" dir="rtl">
+            <thead class="bg-blue-50">
+                <tr>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">
+                        @Html.DisplayNameFor(model => model.Description)
+                    </th>
+                    <th class="px-4 py-2 text-center text-xs font-medium text-secondary-gray uppercase tracking-wider">
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200 text-sm">
+                @foreach (var item in Model)
+                {
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-4 py-2 text-center">
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td class="px-4 py-2 text-center">
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                        <td class="px-4 py-2 text-center">
+                            <div class="flex justify-center gap-x-4">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="text-gray-600 hover:text-gray-800" title="تعديل">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a asp-action="Details" asp-route-id="@item.Id" class="text-gray-600 hover:text-gray-800" title="تفاصيل">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="text-red-600 hover:text-red-800" title="حذف">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Any page-specific scripts can be added here.
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+}

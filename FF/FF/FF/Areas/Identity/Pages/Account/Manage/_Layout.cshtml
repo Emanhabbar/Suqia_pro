@@ -1,0 +1,23 @@
+﻿@*
+    Areas/Identity/Pages/Shared/_Layout.cshtml
+
+    This layout file is used by all Identity Razor Pages.
+    We are making it use the main application's _Layout.cshtml to ensure consistent styling.
+*@
+@{
+    // Set the layout to use the main application's _Layout.cshtml
+    // Ensure this path is correct relative to the root of your project
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+@*
+    The content of this file will be rendered inside the RenderBody() of the main _Layout.cshtml.
+    You can add specific styling or wrappers here if needed for Identity pages,
+    but for now, we'll let the individual Identity pages handle their content.
+*@
+
+@RenderBody()
+
+@section Scripts {
+    @await RenderSectionAsync("Scripts", required: false)
+}
