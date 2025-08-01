@@ -1,0 +1,87 @@
+﻿@model FF.Models.Tank
+@using Microsoft.AspNetCore.Identity
+@using FF.Models @* Required for WaterType enum *@
+
+@{
+    ViewData["Title"] = "Create New Tank"; // Changed title to English
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Ensure it uses the sidebar layout
+}
+
+<!-- تم تعديل أقصى عرض من max-w-lg إلى max-w-md وتقليل الحشوة من p-6 إلى p-4 لجعل الحاوية أصغر -->
+<div class="bg-white rounded-xl shadow-lg p-4 border border-gray-100 max-w-md mx-auto" dir="ltr">
+    @* Changed dir to "ltr" for English content *@
+    <h4 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2 text-left">Create New Tank</h4> @* Changed subheading and text alignment *@
+
+    <!-- تم تقليل المسافة العمودية بين عناصر النموذج من space-y-6 إلى space-y-4 -->
+    <form asp-action="Create" class="space-y-4">
+        <div asp-validation-summary="ModelOnly" class="text-red-600 text-sm mb-2 font-medium" role="alert"></div>
+
+        <div>
+            <label asp-for="Name" class="block text-sm font-medium text-gray-700 mb-1">Tank Name</label>
+            <input asp-for="Name" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" placeholder="Enter tank name" />
+            <span asp-validation-for="Name" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <div>
+            <label asp-for="Capacity" class="block text-sm font-medium text-gray-700 mb-1">Capacity (Barrels)</label>
+            <input asp-for="Capacity" type="number" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" placeholder="Enter capacity in barrels" />
+            <span asp-validation-for="Capacity" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <div>
+            <label asp-for="PricePerBarrel" class="block text-sm font-medium text-gray-700 mb-1">Price Per Barrel</label>
+            <input asp-for="PricePerBarrel" type="number" step="0.01" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" placeholder="Enter price per barrel" />
+            <span asp-validation-for="PricePerBarrel" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <div>
+            <label asp-for="Location" class="block text-sm font-medium text-gray-700 mb-1">Location</label>
+            <input asp-for="Location" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" placeholder="Enter tank location" />
+            <span asp-validation-for="Location" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        <div>
+            <label asp-for="TypeOfWater" class="block text-sm font-medium text-gray-700 mb-1">Type of Water</label>
+            <select asp-for="TypeOfWater" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" asp-items="Html.GetEnumSelectList<WaterType>()">
+                <option value="">Select Water Type</option> @* Optional empty option *@
+            </select>
+            <span asp-validation-for="TypeOfWater" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+
+        @* --- OwnerId field: Only visible for Admin to select the owner --- *@
+        @if (User.IsInRole("Admin"))
+        {
+            <div>
+                <label asp-for="OwnerId" class="block text-sm font-medium text-gray-700 mb-1">Owner</label>
+                <select asp-for="OwnerId" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" asp-items="ViewBag.OwnerId">
+                    <option value="">Select Owner</option>
+                </select>
+                <span asp-validation-for="OwnerId" class="text-red-600 text-xs mt-1 block"></span>
+            </div>
+        }
+        @* --- End of OwnerId field --- *@
+
+        @* --- Areas selection field (multi-select) --- *@
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Areas Served</label>
+            <select name="selectedAreaIds" class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 text-gray-900 focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-base transition duration-150 ease-in-out" multiple asp-items="ViewBag.AvailableAreas"></select>
+            <span asp-validation-for="Areas" class="text-red-600 text-xs mt-1 block"></span>
+        </div>
+        @* --- End of Areas selection field --- *@
+
+        <!-- تم تقليل الحشوة العلوية من pt-4 إلى pt-2 -->
+        <div class="flex justify-between items-center pt-2">
+            <button type="submit" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sidebar-bg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 transition duration-300 transform hover:scale-105">
+                <i class="fas fa-plus mr-2"></i> Create @* Changed icon and text to English *@
+            </button>
+
+            <a asp-action="Index" class="text-primary-blue hover:text-blue-700 font-medium transition duration-150 ease-in-out">Back to List</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
